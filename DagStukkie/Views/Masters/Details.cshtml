@@ -1,0 +1,82 @@
+﻿@model DagStukkie.Models.Master
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Master</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DateToday)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateToday)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BoodskapUID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BoodskapUID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GebedUID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GebedUID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GedagteUID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GedagteUID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SkrifUID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SkrifUID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TeksVersUID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TeksVersUID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TitelUID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TitelUID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChangeDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChangeDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idMaster }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
