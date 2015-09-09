@@ -6,22 +6,23 @@ using System.Data.Entity;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
+
 namespace DagStukkie.Models
 {
-    [Table("Skrif")]
-    public class Skrif
+    [Table("TeksVers")]
+    public class TeksVers
     {
         [Key]
-        public int idSkrif { get; set; }
-        public char SkrifTeks { get; set; }
-        public char BybelTeks { get; set; }
+        public int idTeksVers { get; set; }
+        public char TeksVersNommer { get; set; }
+        public char TeksVersTeks { get; set; }
         public char ChangeOperator { get; set; }
         public DateTime ChangeDate { get; set; }
         public char Status { get; set; }
     }
 
-    public class SkrifContext : DbContext
+    public class TeksVersContext : DbContext
     {
-        public DbSet<Skrif> Dagstukkie { get; set; }
+        public DbSet<TeksVers> Dagstukkie { get; set; }
     }
 }

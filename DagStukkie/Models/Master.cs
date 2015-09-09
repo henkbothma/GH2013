@@ -13,17 +13,16 @@ namespace DagStukkie.Models
     {
         [Key]
         public int idMaster { get; set; }
-
-        public DateTime DateToday { get; set; }
+        DateTime DateToday { get; set; }
         public int BoodskapUID { get; set; }
         public int GebedUID { get; set; }
         public int GedagteUID { get; set; }
         public int SkrifUID { get; set; }
         public int TeksVersUID { get; set; }
         public int TitelUID { get; set; }
-        public char ChangeOperator { get; set; }
-        public DateTime ChangeDate { get; set; }
-        public char Status { get; set; }
+        public string ChangeOperator { get; set; }
+        DateTime ChangeDate { get; set; }
+        public string Status { get; set; }
     }
 
     public class MasterContext : DbContext

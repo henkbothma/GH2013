@@ -3,25 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Data.Entity;
-using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace DagStukkie.Models
 {
-    [Table("Skrif")]
-    public class Skrif
+    [Table("Titel")]
+    public class Titel
     {
         [Key]
-        public int idSkrif { get; set; }
-        public char SkrifTeks { get; set; }
-        public char BybelTeks { get; set; }
+        public int idTitel { get; set; }
+        public char TitelTeks { get; set; }
         public char ChangeOperator { get; set; }
         public DateTime ChangeDate { get; set; }
         public char Status { get; set; }
     }
 
-    public class SkrifContext : DbContext
+    public class TitelContext : DbContext
     {
-        public DbSet<Skrif> Dagstukkie { get; set; }
+        public DbSet<Titel> Dagstukkie { get; set; }
     }
 }

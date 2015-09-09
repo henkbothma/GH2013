@@ -170,16 +170,19 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\MastersController.cs" />
-    <Compile Include="Controllers\SkrifsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Boodskap.cs" />
+    <Compile Include="Models\Gebed.cs" />
+    <Compile Include="Models\Gedagte.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Master.cs" />
     <Compile Include="Models\Skrif.cs" />
+    <Compile Include="Models\TeksVers.cs" />
+    <Compile Include="Models\Titel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -241,16 +244,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Masters\Create.cshtml" />
-    <Content Include="Views\Masters\Delete.cshtml" />
-    <Content Include="Views\Masters\Details.cshtml" />
-    <Content Include="Views\Masters\Edit.cshtml" />
-    <Content Include="Views\Masters\Index.cshtml" />
-    <Content Include="Views\Skrifs\Create.cshtml" />
-    <Content Include="Views\Skrifs\Delete.cshtml" />
-    <Content Include="Views\Skrifs\Details.cshtml" />
-    <Content Include="Views\Skrifs\Edit.cshtml" />
-    <Content Include="Views\Skrifs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
