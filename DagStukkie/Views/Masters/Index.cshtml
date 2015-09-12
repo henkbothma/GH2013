@@ -1,0 +1,75 @@
+﻿@model IEnumerable<DagStukkie.Models.Master>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Boodskap.BoodskapTeks)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gebed.GebedsTeks)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gedagte.GedagteTeks)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Skrif.SkrifTeks)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TeksVers.TeksVersNommer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Titel.TitelTeks)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChangeOperator)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Boodskap.BoodskapTeks)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gebed.GebedsTeks)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gedagte.GedagteTeks)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Skrif.SkrifTeks)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TeksVers.TeksVersNommer)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Titel.TitelTeks)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChangeOperator)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MasterID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MasterID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MasterID })
+        </td>
+    </tr>
+}
+
+</table>

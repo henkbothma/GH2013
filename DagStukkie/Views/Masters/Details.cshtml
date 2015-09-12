@@ -1,0 +1,82 @@
+﻿@model DagStukkie.Models.Master
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Master</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Boodskap.BoodskapTeks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Boodskap.BoodskapTeks)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gebed.GebedsTeks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gebed.GebedsTeks)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gedagte.GedagteTeks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gedagte.GedagteTeks)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Skrif.SkrifTeks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Skrif.SkrifTeks)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TeksVers.TeksVersNommer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TeksVers.TeksVersNommer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Titel.TitelTeks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Titel.TitelTeks)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChangeOperator)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChangeOperator)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MasterID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

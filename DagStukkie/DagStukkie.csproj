@@ -168,8 +168,16 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BoodskapsController.cs" />
+    <Compile Include="Controllers\GebedsController.cs" />
+    <Compile Include="Controllers\GedagtesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MastersController.cs" />
+    <Compile Include="Controllers\SkrifsController.cs" />
+    <Compile Include="Controllers\TeksVersController.cs" />
+    <Compile Include="Controllers\TitelsController.cs" />
+    <Compile Include="DAL\DagStukkieContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -244,6 +252,41 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Titels\Create.cshtml" />
+    <Content Include="Views\Titels\Delete.cshtml" />
+    <Content Include="Views\Titels\Details.cshtml" />
+    <Content Include="Views\Titels\Edit.cshtml" />
+    <Content Include="Views\Titels\Index.cshtml" />
+    <Content Include="Views\TeksVers\Create.cshtml" />
+    <Content Include="Views\TeksVers\Delete.cshtml" />
+    <Content Include="Views\TeksVers\Details.cshtml" />
+    <Content Include="Views\TeksVers\Edit.cshtml" />
+    <Content Include="Views\TeksVers\Index.cshtml" />
+    <Content Include="Views\Skrifs\Create.cshtml" />
+    <Content Include="Views\Skrifs\Delete.cshtml" />
+    <Content Include="Views\Skrifs\Details.cshtml" />
+    <Content Include="Views\Skrifs\Edit.cshtml" />
+    <Content Include="Views\Skrifs\Index.cshtml" />
+    <Content Include="Views\Gedagtes\Create.cshtml" />
+    <Content Include="Views\Gedagtes\Delete.cshtml" />
+    <Content Include="Views\Gedagtes\Details.cshtml" />
+    <Content Include="Views\Gedagtes\Edit.cshtml" />
+    <Content Include="Views\Gedagtes\Index.cshtml" />
+    <Content Include="Views\Gebeds\Create.cshtml" />
+    <Content Include="Views\Gebeds\Delete.cshtml" />
+    <Content Include="Views\Gebeds\Details.cshtml" />
+    <Content Include="Views\Gebeds\Edit.cshtml" />
+    <Content Include="Views\Gebeds\Index.cshtml" />
+    <Content Include="Views\Boodskaps\Create.cshtml" />
+    <Content Include="Views\Boodskaps\Delete.cshtml" />
+    <Content Include="Views\Boodskaps\Details.cshtml" />
+    <Content Include="Views\Boodskaps\Edit.cshtml" />
+    <Content Include="Views\Boodskaps\Index.cshtml" />
+    <Content Include="Views\Masters\Create.cshtml" />
+    <Content Include="Views\Masters\Delete.cshtml" />
+    <Content Include="Views\Masters\Details.cshtml" />
+    <Content Include="Views\Masters\Edit.cshtml" />
+    <Content Include="Views\Masters\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

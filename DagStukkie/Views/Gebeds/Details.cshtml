@@ -1,0 +1,50 @@
+﻿@model DagStukkie.Models.Gebed
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Gebed</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.GebedsTeks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GebedsTeks)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChangeOperator)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChangeOperator)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChangeDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChangeDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.GebedID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
